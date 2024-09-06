@@ -1,0 +1,35 @@
+header{
+    background-color: black;
+    text-align: center;
+    /*padding: 10px 0;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opcion{
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: bisque;
+}
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+ 
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Reddit Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
