@@ -6,11 +6,13 @@ header{
     padding-bottom: 10px;
 }
 
+
 #menu{
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 
 .opcion{
     display: inline;
@@ -18,12 +20,14 @@ header{
     margin-right: 15px;
 }
 
+
 a{
     text-decoration: none;
     color: bisque;
 }
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
  
+
 body{
     width: 100vw;
     height: 100vh;
