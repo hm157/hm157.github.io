@@ -1,5 +1,5 @@
 header{
-    background-color: black;
+    background-color: var(--color-primario);
     text-align: center;
     /*padding: 10px 0;*/
     padding-top: 10px;
@@ -28,6 +28,11 @@ a{
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
  
 
+:root{
+    --color-primario:black;
+    --colorSecundario: yellow;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -36,4 +41,21 @@ body{
   font-weight: 400;
   font-style: normal;
   
+}
+
+#superior{
+    background-image: url(../imagenes/uat.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+   
+}
+
+.sobrepuesto{
+  color:antiquewhite;
+  position: absolute;
+  right:30%;
+  top:40%;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
 }
