@@ -1,0 +1,51 @@
+:root {
+    --color-primario: black;
+    --color-secundario: yellow;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0; 
+
+header {
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 10px 0; 
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opcion {
+    display: inline;
+    margin: 0 15px; 
+}
+
+a {
+    text-decoration: none;
+    color: bisque;
+}
+
+#superior {
+    background-image: url(../imagenes/alaska.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.sp {
+    color: antiquewhite;
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
