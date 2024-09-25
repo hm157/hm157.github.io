@@ -9,6 +9,7 @@
 
         body{
             display: flex;
+            flex-direction: column;
             width: 100wv;
             text-align: center;
             align-items: center;
@@ -26,8 +27,8 @@
             justify-content: space-between;
         }
 
-        input{
-            width: 80%;
+        input, select{
+            width: 70%;
         }
 
         input[type="submit"]
@@ -48,7 +49,12 @@
         </div>
 
         <div class="fila">
-            <p>Apellido</p>
+            <p>Apellido Paterno</p>
+            <input type="text">
+        </div>
+
+        <div class="fila">
+            <p>Apellido Materno</p>
             <input type="text">
         </div>
 
