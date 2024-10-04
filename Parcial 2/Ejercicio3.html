@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulario de Persona</h2>
+        <form id="personaForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoPersona">Tipo de Persona:</label>
+                <select id="tipoPersona" disabled>
+                    <option value="">Seleccionar...</option>
+                    <option value="joven">Joven (18-30 años)</option>
+                    <option value="adulto">Adulto (31-59 años)</option>
+                    <option value="adultoMayor">Adulto Mayor (60 años y más)</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('edad').addEventListener('input', function() {
+            const edad = parseInt(this.value);
+            const tipoPersonaSelect = document.getElementById('tipoPersona');
+            if (edad >= 18 && edad <= 30) {
+                tipoPersonaSelect.value = 'joven';
+            } else if (edad >= 31 && edad <= 59) {
+                tipoPersonaSelect.value = 'adulto';
+            } else if (edad >= 60) {
+                tipoPersonaSelect.value = 'adultoMayor';
+            } else {
+                tipoPersonaSelect.value = '';
+            }
+        });
+
+        document.getElementById('personaForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const edad = document.getElementById('edad').value;
+            const tipoPersona = document.getElementById('tipoPersona').value;
+
+            alert(`Nombre: ${nombre}\nEdad: ${edad}\nTipo de Persona: ${tipoPersona}`);
+        });
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
