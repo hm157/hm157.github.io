@@ -1,0 +1,42 @@
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+}
+
+.container{
+    margin: 80px auto;
+    width:90%;
+    height: 400px;
+    max-width: 500px;
+    outline: 4px solid;
+
+    display: grid;
+}
+
+
+.element{
+    color:#ffff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.element-1{
+    background-color: seagreen;
+}
+
+.element-2{
+    background-color: deeppink;
+}
+
+.element-3{
+    background-color: indigo;
+}
+
+.element-4{
+    background-color: royalblue;
+}
